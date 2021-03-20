@@ -10,7 +10,7 @@ body {
     margin: auto;
     text-align: left;
     background: white;
-    padding: 50px 60px;
+    padding: 50px 60px;boldedUsername
     border: solid #ddd;
     border-width: 0 1px 1px 1px;
 }
@@ -91,4 +91,14 @@ form input[type=text] {
 .username {
     font-size: 15px;
     color: #0090da;
+}
+
+.username:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.boldedUsername {
+    color: red;
+    cursor: pointer;
 }

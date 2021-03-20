@@ -2,8 +2,15 @@ var MessageView = {
 
   render: _.template(`
       <div class="chat">
-        <div class="username"><p><%= username %></p></div>
-        <div class="message"><p><%= text %></p></div>
+        <div class="username <%= username %>"><p><%= username %></p></div>
+        <div class="message <%= username %>"><p><%= text %></p></div>
+      </div>
+    `),
+
+  renderBold: _.template(`
+      <div class="chat">
+        <div class="username <%= username %> boldedUsername"><p><%= username %></p></div>
+        <div class="message <%= username %> boldedUsername"><p><%= text %></p></div>
       </div>
     `),
 
@@ -18,9 +25,12 @@ var MessageView = {
   prependToPage: function(message) {
     //two things
     // get the correct HTML
-    var tweet = this.render(message);
+    if (Friends.friendsList.includes(message.username)) {
+      var tweet = this.renderBold(message);
+    } else {
+      var tweet = this.render(message);
+    }
     // put it on the page
-    console.log(tweet);
     $('#chats').prepend(tweet);
   }
 

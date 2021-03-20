@@ -16,7 +16,12 @@
 //         else:
 //            pre-pend it on the page
 //            store it
-// 4. Display Friends
+
+//
+// 4. Befriend
+//  When hovering on a user, changed color, and changes to click icon
+//  When clicked, bold everything
+//  If clicked again, unbold
 //
 // 5. Filtering Rooms
 
