@@ -7,6 +7,8 @@ var MessageView = {
       </div>
     `),
 
+  // Created a new messageView method to renderBold
+  // Render Bold adds a new class 'bolderUsename'
   renderBold: _.template(`
       <div class="chat">
         <div class="username <%= username %> boldedUsername"><p><%= username %></p></div>

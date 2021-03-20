@@ -10,6 +10,7 @@ var App = {
     FormView.initialize();
     Friends.initialize();
     RoomsView.initialize();
+    Rooms.initialize();
     MessagesView.initialize();
 
     // Fetch initial batch of messages

@@ -24,4 +24,8 @@
 //  If clicked again, unbold
 //
 // 5. Filtering Rooms
-
+// Get list of rooms
+// Add rooms to dropdown
+// Be able to add room
+// Filter messages for room
+// Whenever sending message put room in message
