@@ -2,6 +2,8 @@ var Parse = {
 
   server: `https://app-hrsei-api.herokuapp.com/api/chatterbox/messages/${window.CAMPUS}`,
 
+  // Creates the message and post it into the server
+  // Type POST
   create: function(message) {
     $.ajax({
       // This is the url you should use to communicate with the API server.
@@ -19,6 +21,8 @@ var Parse = {
     });
   },
 
+  // Pass the data to whatever function we gave it to
+  // TYPE IS GET
   readAll: function(successCB, errorCB = null) {
     $.ajax({
       url: Parse.server,

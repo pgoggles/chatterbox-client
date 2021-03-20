@@ -5,6 +5,18 @@
 // 2. Submit Messages
 // Take the message that someones keys in on submit
 // Send the message using Post to the API
-// 3. Display Friends
-// 4. Filtering Rooms
+// Clear out the message we typed
+// Re-render
+// 3. Update Feed
+//    Reimplement render to store messages in an object
+//    Make a re-render function:
+//      Checks if a tweet has already been stored
+//        if it has:
+//             skip it
+//         else:
+//            pre-pend it on the page
+//            store it
+// 4. Display Friends
+//
+// 5. Filtering Rooms
 
