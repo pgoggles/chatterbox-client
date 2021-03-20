@@ -9,8 +9,12 @@ var FormView = {
   handleSubmit: function(event) {
     // Stop the browser from submitting the form
     event.preventDefault();
-    
-    console.log('click!');
+    var message = {
+      username: App.username,
+      text: $('form').serializeArray()[0].value,
+      roomname: '4chan'
+    };
+    Parse.create(message);
   },
 
   setStatus: function(active) {
@@ -19,3 +23,19 @@ var FormView = {
   }
 
 };
+
+/*
+
+var message = {
+  username: 'shawndrost',
+  text: 'trololo',
+  roomname: '4chan'
+};
+
+
+
+
+
+
+
+*/
